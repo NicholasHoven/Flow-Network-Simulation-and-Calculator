@@ -29,3 +29,11 @@ This algorithm is efficient, adaptable, and well-suited for flow simulations, ma
    ```bash
    git clone <repository-url>
    cd <repository-directory>
+
+2. **Compile the Program**: Use a C++ compiler to compile the main.cpp file.
+   ```bash
+   g++ main.cpp -o pipe_flow_simulator
+
+3. **Run the Program**: Execute the compiled binary to start the simulation.
+   ```bash
+   ./pipe_flow_simulator
