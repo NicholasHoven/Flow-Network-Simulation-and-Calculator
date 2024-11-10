@@ -1,4 +1,4 @@
-# Pipe Flow Network Simulator
+# Pipe Flow Network Simulator and Calculator
 
 This program simulates an in-depth model of pipe flow networks, allowing users to analyze and visualize fluid flow through interconnected pipes. This README includes an introduction to pipe flow networks, an explanation of the Ford-Fulkerson algorithm, and instructions for setup and usage.
 
