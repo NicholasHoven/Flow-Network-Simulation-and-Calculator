@@ -57,13 +57,13 @@ node1,node2,max_flow
 ## Special Nodes:
 
 **"s"** (source): Represents the starting point of the network where flow begins.
+
 **"t"** (sink): Represents the endpoint where flow exits the network.
 
 ## Example Input File
 Below is an example of a .txt input file:
 
 ```bash
-Copy code
 s,v1,16
 s,v2,13
 v1,v3,12
