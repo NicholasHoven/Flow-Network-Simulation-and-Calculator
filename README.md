@@ -37,3 +37,55 @@ This algorithm is efficient, adaptable, and well-suited for flow simulations, ma
 3. **Run the Program**: Execute the compiled binary to start the simulation.
    ```bash
    ./pipe_flow_simulator
+
+## Configuring Input Files
+
+The program reads flow network configurations from input `.txt` files. Two sample files, `network1.txt` and `network2.txt`, are provided to demonstrate the format. Each file represents a network of pipes where fluid flows from a source (`s`) to a sink (`t`), passing through various nodes. 
+
+### Input File Format
+
+Each line in the file describes a single pipe in the network using the following structure:
+
+node1,node2,max_flow
+
+-**node1:** The starting node of the pipe (edge) in the network.
+
+-**node2:** The ending node of the pipe.
+
+-**max_flow:** The maximum flow capacity of the pipe, representing the maximum volume of fluid it can transport.
+
+## Special Nodes:
+
+**"s"** (source): Represents the starting point of the network where flow begins.
+**"t"** (sink): Represents the endpoint where flow exits the network.
+
+## Example Input File
+Below is an example of a .txt input file:
+
+```bash
+Copy code
+s,v1,16
+s,v2,13
+v1,v3,12
+v2,v1,4
+v2,v4,14
+v3,v2,9
+v3,t,20
+v4,v3,7
+v4,t,4
+```
+
+## Explanation
+In this example:
+
+s,v1,16 indicates a pipe from the source s to node v1 with a maximum flow capacity of 16.
+s,v2,13 indicates a pipe from the source s to node v2 with a maximum flow capacity of 13.
+v1,v3,12 indicates a pipe from node v1 to node v3 with a maximum flow capacity of 12.
+Each line builds a part of the network's structure, defining both the connections between nodes and the flow limits of each pipe. The program will use this data to calculate the maximum flow from the source (s) to the sink (t).
+
+## Using Custom Input Files
+To use a custom configuration:
+
+Edit either one of the given network.txt files with lines following the format shown above.
+Ensure each connection includes a defined max_flow.
+Save the file in the same directory as the program files, and the program will run and calculate your new flow network automatically.
